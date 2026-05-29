@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ሀበሻ ቴምፕሌትስ | ያግኙን (Contact Us)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 1. መሠረታዊ ቅንብር */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+        
+        /* 2. HEADER */
+        header { background-color: #1a237e; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        header .logo { font-size: 24px; font-weight: bold; text-decoration: none; color: white; }
+        header .logo span { color: #ffb300; }
+        .back-btn { color: white; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; }
+        .back-btn:hover { color: #ffb300; }
+
+        /* 3. CONTACT SECTION */
+        .contact-section { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h1 { font-size: 36px; color: #1a237e; }
+        .section-title p { color: #666; margin-top: 10px; font-size: 16px; }
+
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+        /* የኮንታክት መረጃ ካርዶች (ግራ ጎን) */
+        .contact-info { display: flex; flex-direction: column; gap: 20px; }
+        .info-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; display: flex; align-items: center; gap: 20px; }
+        .info-card .icon-box { background: #e8eaf6; color: #1a237e; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; shrink: 0; }
+        .info-card h3 { color: #1a237e; font-size: 18px; margin-bottom: 5px; }
+        .info-card p, .info-card a { color: #555; font-size: 16px; text-decoration: none; font-weight: 500; }
+        
+        /* ልዩ የቴሌግራም ካርድ ከለር */
+        .telegram-card .icon-box { background: #e1f5fe; color: #0288d1; }
+        .telegram-card a { color: #0288d1; font-weight: bold; transition: 0.3s; }
+        .telegram-card a:hover { text-decoration: underline; }
+
+        /* የመልዕክት መተያ ፎርም (ቀኝ ጎን) */
+        .contact-form { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; }
+        .contact-form h2 { color: #1a237e; margin-bottom: 20px; font-size: 22px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: #555; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; outline: none; transition: 0.3s; }
+        .form-group input:focus, .form-group textarea:focus { border-color: #1a237e; }
+        
+        .submit-btn { width: 100%; background-color: #ffb300; color: #1a237e; border: none; padding: 14px; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .submit-btn:hover { background-color: #1a237e; color: white; }
+
+        /* 4. FOOTER */
+        footer { background-color: #1a237e; color: white; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Habesha<span>Templates</span></a>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> ወደ ዋናው ገጽ ተመለስ</a>
+    </header>
+
+    <section class="contact-section">
+        <div class="section-title">
+            <h1>እኛን ያግኙ</h1>
+            <p>ጥያቄ፣ አስተያየት ወይም የተለየ የዌብሳይት ፍላጎት ካለዎት በማንኛውም ሰዓት ያነጋግሩን።</p>
+        </div>
+
+        <div class="contact-grid">
+            
+            <div class="contact-info">
+                
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h3>በስልክ ይደውሉልን</h3>
+                        <a href="tel:+251953154091">+251 953 154 091</a>
+                    </div>
+                </div>
+
+                <div class="info-card telegram-card">
+                    <div class="icon-box"><i class="fab fa-telegram-plane"></i></div>
+                    <div>
+                        <h3>በቴሌግራም ያውሩን</h3>
+                        <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank">@Mulu21126</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box"><i class="far fa-clock"></i></div>
+                    <div>
+                        <h3>የስራ ሰዓት</h3>
+                        <p>ከሰኞ - ቅዳሜ፡ ከጠዋቱ 2:00 - ማታ 2:00</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+                <h2>ቀጥታ መልዕክት ይተውልን</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>ሙሉ ስም</label>
+                        <input type="text" id="senderName" required placeholder="እባክዎ ስምዎን ያስገቡ">
+                    </div>
+                    <div class="form-group">
+                        <label>ስልክ ቁጥር</label>
+                        <input type="tel" id="senderPhone" required placeholder="09........">
+                    </div>
+                    <div class="form-group">
+                        <label>መልዕክት</label>
+                        <textarea id="senderMessage" rows="5" required placeholder="የሚፈልጉትን ሀሳብ እዚህ ይጻፉልን..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">መልዕክቱን ላክ <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageData = {
+                name: document.getElementById('senderName').value,
+                phone: document.getElementById('senderPhone').value,
+                message: document.getElementById('senderMessage').value,
+                time: new Date().toLocaleString()
+            };
+
+            database.ref('marketplace_messages').push(messageData)
+                .then(() => {
+                    alert("✨ እናመሰግናለን! መልዕክትዎ በተሳካ ሁኔታ ደርሶናል። በአጭር ሰዓት ውስጥ በስልክዎ እንገናኛለን።");
+                    document.getElementById('contactForm').reset();
+                });
+        });
+    </script>
+</body>
+</html>
