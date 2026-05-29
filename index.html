@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ሀበሻ ቴምፕሌትስ | ለቢዝነስዎ ዝግጁ የሆኑ ድረ-ገጾች</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 1. መሠረታዊ ዲዛይን */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f8f9fa; color: #333; }
+        
+        /* 2. HEADER */
+        header { background-color: #1a237e; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; }
+        .logo span { color: #ffb300; }
+        .contact-top { color: white; text-decoration: none; font-weight: bold; background: #ffb300; color: #1a237e; padding: 8px 16px; border-radius: 4px; transition: 0.3s; }
+        .contact-top:hover { background: white; }
+
+        /* 3. HERO SECTION */
+        .hero { background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(40, 53, 147, 0.9)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200') no-repeat center center/cover; padding: 80px 20px; text-align: center; color: white; }
+        .hero h1 { font-size: 40px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; max-width: 600px; margin: 0 auto 30px; color: #e0e0e0; }
+
+        /* 4. TEMPLATES GRID */
+        .marketplace-section { padding: 60px 8%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 32px; color: #1a237e; }
+        .section-title p { color: #666; margin-top: 5px; }
+        
+        .templates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .template-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; transition: 0.3s; }
+        .template-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .template-card img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee; }
+        
+        .card-content { padding: 20px; }
+        .card-content h3 { font-size: 20px; color: #1a237e; margin-bottom: 10px; }
+        .card-content p { color: #666; font-size: 14px; margin-bottom: 20px; min-height: 60px; line-height: 1.5; }
+        
+        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px; }
+        .price { font-size: 20px; font-weight: bold; color: #2e7d32; }
+        
+        /* ACTION BUTTONS */
+        .actions { display: flex; gap: 10px; width: 100%; margin-top: 15px; }
+        .btn { flex: 1; text-align: center; padding: 10px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        .btn-demo { background-color: #f1f3f4; color: #1a237e; border: 1px solid #1a237e; }
+        .btn-demo:hover { background-color: #1a237e; color: white; }
+        .btn-buy { background-color: #ffb300; color: #1a237e; }
+        .btn-buy:hover { background-color: #ff8f00; }
+
+        /* 5. FOOTER */
+        footer { background-color: #1a237e; color: white; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+      <!-- ማውጫ (የተስተካከለ) -->
+    <header>
+        <div class="logo">Habesha<span>Templates</span></div>
+        <nav style="display: flex; gap: 20px; align-items: center;">
+            <!-- ወደ contact.html የሚወስድ አዲስ ሊንክ -->
+            <a href="contact.html" style="color: white; text-decoration: none; font-weight: 500; transition: 0.3s;" onmouseover="this.style.color='#ffb300'" onmouseout="this.style.color='white'"><i class="fas fa-envelope"></i> contact</a>
+                    </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ለቢዝነስዎ የሚሆን ዝግጁ ድረ-ገጽ በቅናሽ ዋጋ</h1>
+        <p>ለካፌ፣ ለሳሎን ወይም ለሪል እስቴት የሚሆኑ፣ ከዳታቤዝ ጋር የተገናኙ ዘመናዊ ዌብሳይቶችን መርጠው በሰዓታት ውስጥ ስራ ያስጀምሩ።</p>
+    </section>
+
+    <section class="marketplace-section">
+        <div class="section-title">
+            <h2>የቀረቡ የዌብሳይት ቴምፕሌቶች</h2>
+            <p>ከታች ካሉት አማራጮች ውስጥ የፈለጉትን መርጠው ይግዙ</p>
+        </div>
+
+        <div class="templates-grid">
+            
+            <div class="template-card">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500" alt="Cafe Template">
+                <div class="card-content">
+                    <h3>ዘመናዊ የካፌና ሬስቶራንት QR ማዘዣ</h3>
+                    <p>ደንበኞች ስልካቸው ላይ QR ኮድ ስካን አድርገው ምናሌ የሚያዩበት እና በቀጥታ ወደ ሰራተኛው ትዕዛዝ የሚልኩበት የቅጽበት (Real-time) ሲስተም።</p>
+                    <div class="card-footer">
+                        <span class="price">2,500 ብር</span>
+                    </div>
+                    <div class="actions">
+                        <a href="../01-Cafe-Restaurant-Template/index.html" class="btn btn-demo" target="_blank"><i class="fas fa-eye"></i> ሞክረው (Demo)</a>
+                        <a href="https://t.me/YOUR_TELEGRAM_USERNAME?text=የካፌውን%20ቴምፕሌት%20መግዛት%20እፈልጋለሁ" class="btn btn-buy" target="_blank"><i class="fas fa-shopping-cart"></i> ግዛ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500" alt="Salon Template">
+                <div class="card-content">
+                    <h3>የውበት ሳሎን የቀጠሮ ማስያዣ</h3>
+                    <p>ደንበኞች ወረፋ ሳይጠብቁ በድረ-ገጹ ላይ የሚፈልጉትን አገልግሎት መርጠው ቀጠሮ የሚይዙበት እና ለሳሎኑ ባለቤት በደወል መልዕክት የሚደርስበት ሲስተም።</p>
+                    <div class="card-footer">
+                        <span class="price">2,500 ብር</span>
+                    </div>
+                    <div class="actions">
+                        <a href="../02-Beauty-Salon-Spa-Template/salon.html" class="btn btn-demo" target="_blank"><i class="fas fa-eye"></i> ሞክረው (Demo)</a>
+                        <a href="https://t.me/YOUR_TELEGRAM_USERNAME?text=የሳሎኑን%20ቴምፕሌት%20መግዛት%20እፈልጋለሁ" class="btn btn-buy" target="_blank"><i class="fas fa-shopping-cart"></i> ግዛ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Real Estate Template">
+                <div class="card-content">
+                    <h3>የሪል እስቴትና የቤት ሽያጭ/ኪራይ</h3>
+                    <p>ባለቤቱ በራሱ ዋጋና አካባቢ እየቀያየረ አዳዲስ ቤቶችን የሚጭንበት፣ ደንበኞች ደግሞ አካባቢ መርጠው ፍላጎታቸውን በቅጽበት የሚልኩበት ዳይናሚክ ድረ-ገጽ።</p>
+                    <div class="card-footer">
+                        <span class="price">3,300 ብር</span>
+                    </div>
+                    <div class="actions">
+                        <a href="../03-Real-Estate-Template/index.html" class="btn btn-demo" target="_blank"><i class="fas fa-eye"></i> ሞክረው (Demo)</a>
+                        <a href="https://t.me/YOUR_TELEGRAM_USERNAME?text=የሪል%20እስቴቱን%20ቴምፕሌት%20መግዛት%20እፈልጋለሁ" class="btn btn-buy" target="_blank"><i class="fas fa-shopping-cart"></i> ግዛ</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ፎተር (የተስተካከለ) -->
+    <footer style="background-color: #1a237e; color: white; text-align: center; padding: 30px; margin-top: 60px; font-size: 14px;">
+        <p>
+            <a href="contact.html" style="color: #ffb300; text-decoration: none; margin: 0 10px; font-weight: bold;">ያግኙን </a> | 
+            <a href="tel:+251953154091" style="color: white; text-decoration: none; margin: 0 10px;"><i class="fas fa-phone-alt"></i> 0953154091</a>
+        </p>
+    </footer>
+
+</body>
+</html>
